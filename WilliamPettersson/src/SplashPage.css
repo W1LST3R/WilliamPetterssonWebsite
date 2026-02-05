@@ -1,0 +1,55 @@
+.splash-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1a1a1f;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.splash-text {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #ffc400;
+  text-align: center;
+  letter-spacing: 0.1em;
+  
+
+  /* Text styling */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  
+  /* Initial state - no animation */
+  transition: none;
+}
+
+.splash-text.grow {
+  animation: growAndFade 1.5s ease-out forwards;
+}
+
+@keyframes growAndFade {
+  0% {
+    font-size: 6rem;
+    opacity: 1;
+    transform: perspective(1000px) scale(1);
+  }
+  100% {
+    font-size: 10rem;
+    opacity: 0;
+    transform: perspective(1000px) scale(1.5);
+  }
+}
+
+/* Ensure the splash page covers everything */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}

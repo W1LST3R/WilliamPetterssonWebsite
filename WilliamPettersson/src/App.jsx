@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import SplashPage from './SplashPage'
+import InfoContainer from './InfoContainer'
+import SkillsContainer from './SkillsContainer'
+import ContactContainer from './ContactContainer'
+import PersonalContainer from './PersonalContainer'
 
 function App() {
   const [showSplash, setShowSplash] = useState(true)
@@ -15,10 +19,16 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Welcome</h1>
-      <p>Your content goes here</p>
+      <div className="Site-Title">
+        <h1>Hej mitt namn är William Pettersson</h1>
+      </div>
+      <InfoContainer />
+      <SkillsContainer />
+      <ContactContainer />
+      <PersonalContainer />
     </div>
   )
 }
+
 
 export default App

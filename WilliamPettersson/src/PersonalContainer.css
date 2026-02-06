@@ -5,3 +5,28 @@
   background-color: #2d332d;
   border: 1px solid cadetblue;
 }
+
+.personal-button {
+  width: 300px;
+  height: 90px;
+  margin: 20px;
+  font-size: 1rem;
+  color: #d0d0d0;
+  background-color: #1a1e1a;
+  border: 1px solid cadetblue;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+button.personal-button {
+  padding: 0;
+}
+
+a.personal-button {
+  padding: 0;
+}

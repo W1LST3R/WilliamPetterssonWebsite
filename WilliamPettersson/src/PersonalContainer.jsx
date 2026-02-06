@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom'
 import './PersonalContainer.css'
 
 function PersonalContainer() {
   return (
     <div className="personal-container">
-      <button>Om Mig</button>
-      <button>Om Mig</button>
-      <button>Om Mig</button>
+      <Link to="/interests" className="personal-button">Mina intressen</Link>
+      <button className='personal-button'>Projekt</button>
+      <button className='personal-button'>Gaming hörna</button>
     </div>
   )
 }

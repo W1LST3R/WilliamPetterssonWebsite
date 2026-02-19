@@ -1,0 +1,79 @@
+.contact-container {
+    display: flex; /* Aktiverar kolumner */
+    align-items: flex-start;
+    gap: 2rem; /* Mellanrum mellan bildkolumn och textkolumn */
+    background-color: #1a1a1a; /* Exempel på mörk bakgrund */
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 1080px;
+    border: 1px solid cadetblue;
+}
+
+.profile-sidebar {
+    display: flex;
+    flex-direction: column; /* Staplar bild och länk */
+    align-items: center;
+    width: 175px; /* Samma som bildens bredd */
+}
+
+.profile-icon {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid cadetblue;
+    margin-bottom: 1rem; /* Avstånd ner till LinkedIn-boxen */
+}
+
+.contact-link {
+    width: 78%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    background-color: #313030;
+    border: 1px solid cadetblue;
+    
+}
+
+.contact-link:hover {
+  box-shadow: 0 0 18px rgba(95,158,160,0.7); /* vit glow med 10% opacitet */
+  transform: translateY(-2px);
+}
+
+.contact-icon {
+    width: 130px;
+    height: auto;
+}
+
+.contact-text {
+    flex: 1; /* Tar upp resterande utrymme */
+    color: white;
+    text-align: left; /* Texten ska vara vänsterställd bredvid bilden */
+}
+.contact-container {
+    margin-top: 100px;
+}
+
+.copy-button {
+    margin-top: 1.1rem;
+    margin-right: 60px;
+    padding: 1rem;
+    font-size: 0.8rem;
+    width: 175px;
+    height: 50px;
+    background-color: #313030;
+    color: white;
+    border: 1px solid cadetblue;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+  box-shadow: 0 0 18px rgba(95,158,160,0.7); /* vit glow med 10% opacitet */
+  transform: translateY(-2px);
+}

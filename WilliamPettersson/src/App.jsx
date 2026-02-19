@@ -3,12 +3,12 @@ import { Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom'
 import './App.css'
 import './Menu.css'
 import SplashPage from './SplashPage'
-import InfoContainer from './InfoContainer'
-import ContactContainer from './ContactContainer'
 import PersonalContainer from './PersonalContainer'
 import InterestsPage from './InterestsPage'
 import SkillsPage from './skills/SkillsPage'
 import ProjectsPage from './projects/ProjectsPage'
+import ContactPage from './ContactPage'
+import githubIcon from './assets/github.svg'
 
 function App() {
   const [showSplash, setShowSplash] = useState(true)
@@ -46,14 +46,13 @@ function App() {
                   <Link to="/interests" className="menu-link">Intressen</Link>
                   <Link to="/skills" className="menu-link">Kunskaper</Link>
                   <Link to="/projects" className="menu-link">Projekt</Link>
+                  <Link to="/contact" className="menu-link">Kontakta mig</Link>
+                  <a href="https://github.com/W1LST3R" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <img src={githubIcon} alt="GitHub" className="social-iconlink" />
+                  </a>
               </div>
             </nav>
             <div className="app-container"> 
-              <div className="Site-Title">
-                <h1>Hej mitt namn är William Pettersson</h1>
-              </div>
-              <InfoContainer />
-              <ContactContainer />
               <PersonalContainer />
             </div>
           </div>
@@ -61,6 +60,7 @@ function App() {
         <Route path="/interests" element={<InterestsPage />} />
         <Route path="/skills" element={<SkillsPage/>}/>
         <Route path="/projects" element={<ProjectsPage/>}/>
+        <Route path="/contact" element={<ContactPage/>} />
       </Routes>
     </>
   )

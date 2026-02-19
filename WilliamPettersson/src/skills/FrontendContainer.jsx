@@ -3,6 +3,7 @@ import './SkillsContainer.css'
 function FrontendContainer() {
   const skills = [
     // Använd SVG-filer från src/assets mappen (ex: react.svg)
+    { img: "javascript.svg", alt: "JavaScript-ikon", name: 'JavaScript', description: 'Programming Language for Web Development' },
     { img: "react.svg", alt: "React-ikon", name: 'React', description: 'JavaScript UI Library' }, 
      { img: "html.svg", alt: "HTML-ikon", name: 'HTML' ,description:'Markup Language for Web Pages'},
     { img: "css.svg", alt: "CSS-ikon", name: 'CSS' ,description:'Stylesheet Language for Web Design'},

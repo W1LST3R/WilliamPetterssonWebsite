@@ -6,7 +6,6 @@ function BackendContainer() {
     {img: "java.svg", alt: "Java-ikon", name: 'Java',description: 'Object-Oriented Programming Language'},
     {img: "python.svg", alt: "Python-ikon", name: 'Python', description: 'Versatile Programming Language'},
     {img:"csharp.svg", alt: "C#-ikon", name: 'C#', description: 'Programing Language for .NET Development'},
-    { img: "javascript.svg", alt: "JavaScript-ikon", name: 'JavaScript', description: 'Programming Language for Web Development' },
     {img:"kotlin.svg", alt: "Kotlin-ikon", name: 'Kotlin', description: 'Programming Language for Android Development' },
   ]
 //https://tenor.com/bRPBh.gif

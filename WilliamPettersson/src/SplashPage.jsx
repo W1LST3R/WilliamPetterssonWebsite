@@ -23,9 +23,9 @@ function SplashPage({ onComplete }) {
 
   return (
     <div className="splash-container">
-      <div className={`splash-text ${isAnimating ? 'grow' : ''}`}>
-        Välkommen till min portfolio
-      </div>
+     <div className={`splash-text ${isAnimating ? 'grow' : ''}`}>
+       Välkommen till min portfolio
+     </div>
     </div>
   )
 }

@@ -1,0 +1,37 @@
+.Menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%; /* Sträck ut menyn över hela bredden */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Starta från vänster */
+  padding: 20px 40px;
+  background-color: transparent; /* Svart bakgrund som på bilden */
+  box-sizing: border-box;
+}
+
+.back-button {
+  color: cadetblue; /* Den starka röda färgen från bilden */
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase; /* Gör texten till versaler */
+  margin-right: 40px; /* Avstånd mellan namnet och länkarna */
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px; /* Avstånd mellan de vita länkarna */
+}
+
+.menu-link {
+  color: #ffffff; /* Vita länkar som på bilden */
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.menu-link:hover {
+  color: cadetblue; /* Ljusgrå vid hovring */
+}

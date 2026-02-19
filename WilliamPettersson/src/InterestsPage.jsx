@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './InterestsPage.css'
+import './Menu.css'
 
 function InterestsPage() {
   const interests = [
@@ -29,8 +30,16 @@ function InterestsPage() {
 
   return (
     <div className="interests-container">
+      <nav className="Menu">
+              <Link to="/" className="back-button">HEM</Link>
+              <div className="nav-links">
+                  <Link to="/interests" className="menu-link">Intressen</Link>
+                  <Link to="/skills" className="menu-link">Kunskaper</Link>
+                  <Link to="/projects" className="menu-link">Projekt</Link>
+                  {/* Lägg till fler länkar här för att matcha bilden */}
+              </div>
+            </nav>
       <header className="interests-header">
-        <Link to="/" className="back-link">← Tillbaka</Link>
         <h1 className="interests-title">Mina Intressen</h1>
       </header>
 

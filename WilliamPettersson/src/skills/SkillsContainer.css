@@ -1,9 +1,7 @@
 .skills-container {
   padding: 1.2rem;
   margin: 5rem 0;
-  border-radius: 8px;
-  background-color: #2d332d; /* behåll nuvarande färg */
-  border: 1px solid cadetblue;
+  background-color: transparent;
 }
 
 .skills-container h2 {
@@ -15,14 +13,15 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* fyra ikoner per rad */
-  gap: 0.5rem;
+  grid-template-columns: repeat(5, 1fr); /* fyra ikoner per rad */
+  row-gap: 1.2rem;
+  column-gap: 1.5rem;
 }
 
-
-
 .skill-card {
-    background: transparent;
+  border-radius: 4%;
+  background-color: #2d332d; /* behåll nuvarande färg */
+  border: 3px solid cadetblue;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
@@ -33,15 +32,17 @@
 
 .skill-media {
   display: flex;
+  height: 300px;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .icon-wrap {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
+  padding: 7px;
+  width: 110px;
+  height: 110px;
+  border-radius: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,9 +51,9 @@
   transition: background 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
 }
 
-.skill-icon {
-  width: 48px;
-  height: 48px;
+.skill-icon { 
+  width: 90px;
+  height: 90px;
   object-fit: contain;
   display: block;
 }
@@ -64,22 +65,28 @@
   transition: color 0.18s ease, text-shadow 0.18s ease;
 }
 
+.skill-description {
+  padding: 10px;
+  height: 50px;
+}
+
 .skill-card h3 {
+  padding: 5px;
   margin: 0 0 0.5rem 0;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: #d0d0d0; /* ljusgrå text */
 }
 
 .skill-card p {
   margin: 0;
   color: #cfcfcf; /* lite ljusare grå för beskrivning */
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* Hover: ikonen lyser upp med vitt och får en glow */
-.skill-media:hover .icon-wrap {
-  background: rgba(255,255,255,0.06); /* subtil vit bakgrund */
-  box-shadow: 0 0 18px rgba(255,255,255,0.1); /* vit glow med 10% opacitet */
+.skill-card:hover  {
+  background: rgba(0,0,0,0.06); /* subtil vit bakgrund */
+  box-shadow: 0 0 18px rgba(95,158,160,0.7); /* vit glow med 10% opacitet */
   transform: translateY(-2px);
 }
 .skill-media:hover .skill-name {
@@ -88,6 +95,13 @@
 .skill-media:hover .skill-icon {
   /* optionally slightly brighten the icon */
   filter: brightness(1.05);
+}
+.skill-media:hover .skill-description {
+  filter:brightness(1.5);
+  color: #ffffff; /* gör beskrivningen tydligare vid hover */
+}
+.skill-media:hover .icon-wrap {
+  filter:brightness(1.1);
 }
 
 .empty-message {

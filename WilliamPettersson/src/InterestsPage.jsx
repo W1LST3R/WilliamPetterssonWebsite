@@ -4,15 +4,13 @@ import './InterestsPage.css'
 import './Menu.css'
 import githubIcon from './assets/github.svg'
 import cookingImage from './assets/cooking.jfif'
-import climbingVideo from './assets/climbing.mp4'
 import huntingImage from './assets/hunting.jfif'
-import skiingVideo from './assets/skiing.mp4'
 import fishingImage from './assets/fishing.jfif'
 
 function InterestsPage() {
   const interests = [
     { name: 'Matlagning', path: '/interests/cooking', image: cookingImage, description: 'Jag gillar att laga mat och testa nya recept.' },
-    { name: 'Klättring', path: '/interests/climbing', image: climbingVideo, description: 'Träning är en viktig del av min vardag, därför klättrar jag regelbundet inomhus' },
+    { name: 'Klättring', path: '/interests/climbing', image: "./assets/climbing.mp4", description: 'Träning är en viktig del av min vardag, därför klättrar jag regelbundet inomhus' },
     { name: 'Jakt', path: '/interests/hunting', image: huntingImage, description: 'Under hösten jagar jag så ofta jag kan på Gotland. Då jagar jag med hundar efter rådjur. Men det händer också att jag smygjagar också.' },
     { name: 'Skidåkning', path: '/interests/skiing', image: "./assets/skiing.mp4", description: 'Under vintern försöker jag alltid boka in en skidsemester.' },
     { name: 'Fiske', path: '/interests/fishing', image: fishingImage, description: 'Fiske är något jag gillar att göra på lediga dagar, då man får komma ut i naturen och ibland fånga en fisk.' }

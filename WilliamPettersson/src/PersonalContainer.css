@@ -27,5 +27,6 @@ a.personal-button {
 
 .personal-button:hover {
     box-shadow: 0 0 18px rgba(95,158,160,0.7); /* vit glow med 10% opacitet */
-  transform: translateY(-2px); /* lyft knappen lite när den hovras */
+  transform: translateY(-2px); /* lyft knovras */
+  /* ändra färg på text och bakgrund vid hover */
 }

@@ -9,6 +9,7 @@ import SkillsPage from './skills/SkillsPage'
 import ProjectsPage from './projects/ProjectsPage'
 import ContactPage from './ContactPage'
 import githubIcon from './assets/github.svg'
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true)
@@ -62,6 +63,7 @@ function App() {
         <Route path="/projects" element={<ProjectsPage/>}/>
         <Route path="/contact" element={<ContactPage/>} />
       </Routes>
+      <Analytics />
     </>
   )
 }

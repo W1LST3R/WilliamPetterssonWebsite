@@ -9,7 +9,6 @@ import SkillsPage from './skills/SkillsPage'
 import ProjectsPage from './projects/ProjectsPage'
 import ContactPage from './ContactPage'
 import githubIcon from './assets/github.svg'
-import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
@@ -65,7 +64,6 @@ function App() {
         <Route path="/contact" element={<ContactPage/>} />
       </Routes>
 
-      <Analytics />
       <SpeedInsights />
     </>
   )

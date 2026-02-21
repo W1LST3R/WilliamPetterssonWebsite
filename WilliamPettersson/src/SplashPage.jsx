@@ -15,8 +15,8 @@ function SplashPage({ onComplete }) {
   useEffect(() => {
     if (isAnimating) {
       const redirectTimer = setTimeout(() => {
-        onComplete()
-      }, 1500)
+        onComplete(
+      }, 1550)
       return () => clearTimeout(redirectTimer)
     }
   }, [isAnimating, onComplete])

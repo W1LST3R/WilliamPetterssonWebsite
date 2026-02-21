@@ -9,7 +9,6 @@ import SkillsPage from './skills/SkillsPage'
 import ProjectsPage from './projects/ProjectsPage'
 import ContactPage from './ContactPage'
 import githubIcon from './assets/github.svg'
-import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   const [showSplash, setShowSplash] = useState(true)
@@ -64,7 +63,6 @@ function App() {
         <Route path="/contact" element={<ContactPage/>} />
       </Routes>
 
-      <SpeedInsights />
     </>
   )
 }
